@@ -18,11 +18,15 @@ void printEachWord(string str)
 	//Mohammad Abu-Hadhoud Programming Advices
 	for (int i = 0; i < str.length(); i++)
 	{
-		cout << str[i];
+		if (str[i] == ' ')
+			str[i] = '\n';
+
+		/*cout << str[i];
 		if (str[i] == ' ')
 			cout << "\n";
-			continue;
+			continue;*/
 	}
+	cout << str;
 }
 
 
